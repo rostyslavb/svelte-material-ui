@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Material UI Components for Svelte, ready to use in your app."
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SciActive" />
+    <meta name="twitter:creator" content="@SciActive" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Svelte Material UI" />
+    <meta property="og:url" content="https://sveltematerialui.com/" />
+    <meta
+      property="og:image"
+      content="https://sveltematerialui.com/header.png"
+    />
+    <meta
+      property="og:description"
+      content="Material UI Components for Svelte, ready to use in your app."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts and CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+
+    <!-- Prism Theme (For Markdown Pages) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <!-- SMUI Styles -->
+    <link
+      rel="stylesheet"
+      href="/smui.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="/smui-dark.css"
+      media="screen and (prefers-color-scheme: dark)"
+    />
+
+    <!-- Site Styles -->
+    <link
+      rel="stylesheet"
+      href="/site.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="/site-dark.css"
+      media="screen and (prefers-color-scheme: dark)"
+    />
+
+    
+
+		
+
+		<link rel="modulepreload" href="/_app/start-efb61313.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-23f55e93.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-a7fefc9d.js">
+		<link rel="modulepreload" href="/_app/chunks/index-100d545a.js">
+		<link rel="modulepreload" href="/_app/chunks/useActions-c024ab52.js">
+		<link rel="modulepreload" href="/_app/chunks/Ripple-460512c3.js">
+		<link rel="modulepreload" href="/_app/chunks/index-810e6b5e.js">
+		<link rel="modulepreload" href="/_app/chunks/IconButton-8234672c.js">
+		<link rel="modulepreload" href="/_app/chunks/index-7b2094f5.js">
+		<link rel="modulepreload" href="/_app/chunks/index-4c24226e.js">
+		<link rel="modulepreload" href="/_app/chunks/index-82fed4b8.js">
+		<link rel="modulepreload" href="/_app/chunks/prefixFilter-0866cfc5.js">
+		<link rel="modulepreload" href="/_app/pages/demo/top-app-bar/iframe/short-closed.svelte-f51352a8.js">
+		<link rel="modulepreload" href="/_app/chunks/LoremIpsum-81114b6e.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-fa509951.css">
+		<link rel="stylesheet" href="/_app/assets/pages/demo/top-app-bar/iframe/short-closed.svelte-f7c77f53.css">
+
+		<script type="module">
+			import { start } from "/_app/start-efb61313.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-a7fefc9d.js"),
+						import("/_app/pages/demo/top-app-bar/iframe/short-closed.svelte-f51352a8.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fdemo\u002Ftop-app-bar\u002Fiframe\u002Fshort-closed",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-79MKYND6TX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-79MKYND6TX');
+    </script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+
+<header class="mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-collapsed" style=""><div class="mdc-top-app-bar__row"><section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"><button class="material-icons mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__navigation-icon" style=""><div class="mdc-icon-button__ripple"></div>
+  menu</button>
+      <span class="mdc-top-app-bar__title">Short</span>
+</section>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar"><button class="material-icons mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style="" aria-label="Download"><div class="mdc-icon-button__ripple"></div>
+  file_download</button>
+</section>
+</div>
+</header>
+<main class=""><h5>Short, Always Collapsed</h5>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <img alt="Page content placeholder" src="/page-content.jpg" style="display: block; max-width: 100%; height: auto; margin: 1em auto;">
+</main>
+
+
+
+			
+		</div>
+  </body>
+</html>

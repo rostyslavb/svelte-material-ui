@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Material UI Components for Svelte, ready to use in your app."
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SciActive" />
+    <meta name="twitter:creator" content="@SciActive" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Svelte Material UI" />
+    <meta property="og:url" content="https://sveltematerialui.com/" />
+    <meta
+      property="og:image"
+      content="https://sveltematerialui.com/header.png"
+    />
+    <meta
+      property="og:description"
+      content="Material UI Components for Svelte, ready to use in your app."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts and CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+
+    <!-- Prism Theme (For Markdown Pages) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <!-- SMUI Styles -->
+    <link
+      rel="stylesheet"
+      href="/smui.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="/smui-dark.css"
+      media="screen and (prefers-color-scheme: dark)"
+    />
+
+    <!-- Site Styles -->
+    <link
+      rel="stylesheet"
+      href="/site.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="/site-dark.css"
+      media="screen and (prefers-color-scheme: dark)"
+    />
+
+    <title>Migrating - SMUI</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-efb61313.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-23f55e93.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-a7fefc9d.js">
+		<link rel="modulepreload" href="/_app/chunks/index-100d545a.js">
+		<link rel="modulepreload" href="/_app/chunks/useActions-c024ab52.js">
+		<link rel="modulepreload" href="/_app/chunks/Ripple-460512c3.js">
+		<link rel="modulepreload" href="/_app/chunks/index-810e6b5e.js">
+		<link rel="modulepreload" href="/_app/chunks/IconButton-8234672c.js">
+		<link rel="modulepreload" href="/_app/chunks/index-7b2094f5.js">
+		<link rel="modulepreload" href="/_app/chunks/index-4c24226e.js">
+		<link rel="modulepreload" href="/_app/chunks/index-82fed4b8.js">
+		<link rel="modulepreload" href="/_app/chunks/prefixFilter-0866cfc5.js">
+		<link rel="modulepreload" href="/_app/pages/MIGRATING.md.svelte-021d267c.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-fa509951.css">
+
+		<script type="module">
+			import { start } from "/_app/start-efb61313.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-a7fefc9d.js"),
+						import("/_app/pages/MIGRATING.md.svelte-021d267c.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002FMIGRATING.md",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-79MKYND6TX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-79MKYND6TX');
+    </script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+
+<header class="demo-top-app-bar mdc-top-app-bar smui-top-app-bar--static" style=""><div class="mdc-top-app-bar__row"><section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a href="/" class="mdc-theme--primary mdc-top-app-bar__title" style="">Svelte Material UI</a>
+</section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar" style="color: var(--mdc-on-surface, #000);">
+        <a href="https://discord.gg/aFzmkrmg9P" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-16"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Join the Discord Server</div>
+</div>
+        <a href="https://twitter.com/SciActive" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-17"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Hunter Perrin (SMUI Author) on Twitter</div>
+</div>
+        <a href="https://github.com/hperrin/svelte-material-ui" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-18"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">SMUI on GitHub</div>
+</div>
+        <button class="mdc-icon-button mdc-icon-button--on mdc-icon-button--display-flex mdc-top-app-bar__action-item" style="" aria-pressed="true"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon mdc-icon-button__icon--on" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z" class="svelte-nda62k"></path></svg>
+            <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z" class="svelte-nda62k"></path></svg></button>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-19"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Lights off</div>
+</div>
+</section>
+</div>
+</header>
+  <div class="drawer-container svelte-nda62k"><aside class="demo-drawer mdc-theme--secondary-bg hide-initial-small mdc-drawer"><div class="mdc-drawer__content"><nav class="mdc-deprecated-list" role="list"><a href="/INSTALL.md/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Installation</span>
+              </a><a href="/SVELTEKIT.md/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">SvelteKit</span>
+              </a><a href="/THEMING.md/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Theming</span>
+              </a><a href="/MIGRATING.md/" class="mdc-deprecated-list-item mdc-deprecated-list-item--activated" style="" aria-current="page" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Migrating</span>
+              </a><hr class="mdc-deprecated-list-divider" role="separator">
+<a href="/demo/banner/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Banner</span>
+              </a><a href="/demo/button/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Button</span>
+              </a><a href="/demo/fab/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Floating Action Button</span>
+              </a><a href="/demo/icon-button/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Icon Button</span>
+              </a><a href="/demo/card/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Cards</span>
+              </a><a href="/demo/common/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Common</span>
+              </a><a href="/demo/data-table/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Data Table</span>
+              </a><a href="/demo/dialog/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Dialog</span>
+              </a><a href="/demo/drawer/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Drawer</span>
+              </a><a href="/demo/elevation/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Elevation</span>
+              </a><a href="/demo/image-list/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Image List</span>
+              </a><span class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="" tabindex="-1"><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Inputs and Controls</span>
+              </span><a href="/demo/checkbox/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Checkbox</span>
+              </a><a href="/demo/chips/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Chips</span>
+              </a><a href="/demo/form-field/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Form Field</span>
+              </a><a href="/demo/radio/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Radio Button</span>
+              </a><a href="/demo/segmented-button/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Segmented Button</span>
+              </a><a href="/demo/select/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Select Menu</span>
+              </a><a href="/demo/slider/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Slider</span>
+              </a><a href="/demo/switch/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Switch</span>
+              </a><a href="/demo/textfield/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Text Field</span>
+              </a><a href="/demo/layout-grid/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Layout Grid</span>
+              </a><a href="/demo/list/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">List</span>
+              </a><a href="/demo/menu-surface/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Menu Surface</span>
+              </a><a href="/demo/menu/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Menu</span>
+              </a><a href="/demo/paper/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Paper</span>
+              </a><span class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="" tabindex="-1"><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Progress Indicators</span>
+              </span><a href="/demo/circular-progress/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Circular Progress</span>
+              </a><a href="/demo/linear-progress/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Linear Progress</span>
+              </a><a href="/demo/ripple/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Ripple</span>
+              </a><a href="/demo/snackbar/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Snackbar</span>
+              </a><a href="/demo/tabs/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Tabs</span>
+              </a><a href="/demo/tooltip/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Tooltip</span>
+              </a><a href="/demo/top-app-bar/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Top App Bar</span>
+              </a><a href="/demo/touch-target/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Touch Target</span>
+              </a><a href="/demo/typography/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Typography</span>
+              </a>
+</nav>
+</div>
+</aside>
+
+    
+    <div class="demo-app-content mdc-drawer-app-content"><main class="demo-main-content svelte-nda62k">
+
+<section class="markdown"><h1 id="migrating-to-newer-smui-versions">Migrating to Newer SMUI Versions</h1>
+<p>This doc contains information that will help you migrate your code from an older version of SMUI to a newer one. Things that you will need to change in your existing code will be written here. It would also be helpful to check the MDC changelog if the upstream MDC versions has changed between SMUI versions.</p>
+<h1 id="smui-5---smui-6">SMUI 5 -&gt; SMUI 6</h1>
+<p>SMUI 6 migrated to upstream MDC 13.0 from 11.0:
+<a href="https://github.com/material-components/material-components-web/blob/master/CHANGELOG.md#1300-2021-09-24" rel="nofollow">https://github.com/material-components/material-components-web/blob/master/CHANGELOG.md#1300-2021-09-24</a></p>
+<h2 id="breaking-changes">Breaking Changes</h2>
+<ul><li>For <code>@smui/common</code>, <code>@smui/textfield</code>, <code>@smui/select</code>, and <code>@smui/snackbar</code>, if you ever import something like <code>@smui/snackbar/kitchen/index</code> or <code>@smui/textfield/helper-text/index</code>, you need to remove the <code>/index</code> from the end of that import. (This does not apply to Sass imports.)<ul><li>Here’s a regex you can use in VS Code to search for these: @smui/(common|textfield|select|snackbar)/[\w-]+/index</li></ul></li>
+<li>The ‘/styled’ import endpoints have been removed. You will need to import the ‘/index’ endpoint from Sass yourself if you were using the Advanced Styling Method.</li></ul>
+<h3 id="components">Components</h3>
+<ul><li>Switch<ul><li>No longer emits “change” event, use “SMUISwitch:change” event instead.</li></ul></li></ul>
+<h2 id="changes">Changes</h2>
+<ul><li>MDC events are now dispatched with “SMUI” instead of “MDC” prefix. They are dispatched as both though, so your code shouldn’t break. You should still update your code to use the new “SMUI” prefix anyway.</li></ul>
+<h3 id="components-1">Components</h3>
+<ul><li>Switch<ul><li>No longer needs <code>valueKey</code> prop.</li>
+<li>Default color is now “primary”.</li></ul></li></ul>
+<h1 id="smui-4---smui-5">SMUI 4 -&gt; SMUI 5</h1>
+<h2 id="breaking-changes-1">Breaking Changes</h2>
+<ul><li>TypeScript!!! You don’t need to use TypeScript, but you do need to use the <a href="https://github.com/sveltejs/svelte-preprocess" rel="nofollow">TypeScript preprocessor</a> for Svelte.</li>
+<li>Events have been renamed from like “SMUI:component:sub-component:event” to “SMUIComponentSubComponent:event”.</li>
+<li>Elemental components (from @smui/common) should be imported as named imports from <code>@smui/common/elements</code> instead, so that they have the right types.</li>
+<li>The <code>/bare</code> import paths have been removed. (The default import path has been unstyled since v4.)</li></ul>
+<h1 id="smui-40---smui-41">SMUI 4.0 -&gt; SMUI 4.1</h1>
+<ul><li>Event modifiers have changed to use ”$” instead of ”:” (<code>on:click$capture={handler}</code>), so that all events, even MDC events, can be bound with modifiers.<ul><li>The old ”:” syntax will still work, it will just give a warning in the console.</li></ul></li></ul>
+<h1 id="smui-3---smui-4">SMUI 3 -&gt; SMUI 4</h1>
+<h2 id="breaking-changes-2">Breaking Changes</h2>
+<p>Components no longer import styles from their “index.js” files. If you were using “/bare” before, you don’t need to anymore. If you were relying on styles being imported, you now need to use the “/styled” endpoint for components.</p>
+<p>Check out the new <a href="https://github.com/hperrin/svelte-material-ui/tree/master/packages/smui-theme" rel="nofollow">smui-theme</a> package. It can help you with your themes.</p>
+<h1 id="smui-30---smui-31">SMUI 3.0 -&gt; SMUI 3.1</h1>
+<p>SMUI 3.1 migrated to upstream MDC 11.0 from 10.0:
+<a href="https://github.com/material-components/material-components-web/blob/master/CHANGELOG.md#1100-2021-04-15" rel="nofollow">https://github.com/material-components/material-components-web/blob/master/CHANGELOG.md#1100-2021-04-15</a></p>
+<p>You should update your MDC dependencies to 11.0 as well.</p>
+<h2 id="breaking-changes-3">Breaking Changes</h2>
+<h3 id="theming-sass">Theming, Sass</h3>
+<ul><li>MDC-Web chips trailing actions class changed.</li>
+<li>MDC-Web list classes changed.</li></ul>
+<h2 id="new-features">New Features</h2>
+<h3 id="components-2">Components</h3>
+<ul><li>Banner<ul><li>Add focus trap on the banner.</li></ul></li>
+<li>Dialog<ul><li>New <code>fullscreen</code> prop.</li>
+<li>New <code>over</code> slot.</li></ul></li>
+<li>Menu Surface<ul><li>New <code>maxHeight</code> prop.</li>
+<li>New <code>horizontallyCenteredOnViewport</code> prop.</li></ul></li>
+<li>Slider<ul><li>Rounds values to correct decimal places based on <code>step</code> prop.</li></ul></li>
+<li>Tooltip<ul><li>New <code>attachScrollHandler</code> and <code>removeScrollHandler</code> functions for adding additional scrollable elements to handle. Both accept a function.</li></ul></li></ul>
+<h1 id="smui-2---smui-3">SMUI 2 -&gt; SMUI 3</h1>
+<p>You will need to migrate to Dart Sass. <code>node-sass</code> is no longer supported, as it is deprecated and too old now.</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">npm un -D node-sass
+npm i -D sass</code><!-- HTML_TAG_END --></pre>
+<p>SMUI 3 migrated to upstream MDC 10.0 from 4.0:
+<a href="https://github.com/material-components/material-components-web/blob/master/CHANGELOG.md#1000-2021-02-05" rel="nofollow">https://github.com/material-components/material-components-web/blob/master/CHANGELOG.md#1000-2021-02-05</a></p>
+<p>There are newly updated instructiong for using SMUI in Sapper.</p>
+<h2 id="breaking-changes-4">Breaking Changes</h2>
+<h3 id="theming-sass-1">Theming, Sass</h3>
+<ul><li>MDC-Web migrated to the “@use” syntax, so mixins, functions, and variables are namespaced by the “@use” statement now instead of a prefix.</li>
+<li>Theming has changed, so you’ll need to update your ”_smui-theme.scss” file. Follow <a href="/THEMING.md">this guide</a>.</li></ul>
+<h3 id="components-3">Components</h3>
+<ul><li>Chips<ul><li>You now need to use <code>let:chip</code> on the set and pass it to the chip with <code>{chip}</code>.</li>
+<li>Chips now export LeadingIcon, TrailingIcon, and TrailingAction, instead of Icon.</li>
+<li>Removed <code>selected</code> prop on Chip. <code>selected</code> prop on Chips is now the only way to set the selected chip(s), and it/they should be identical to one/some of the entries in <code>chips</code> (pass objects by reference).</li>
+<li>Don’t provide any <code>tabindex</code> props to any of the Chips, Texts, or the Set. They will manage their own tabindex.</li>
+<li>On TrailingAction, use <code>icon$class</code> to add classes to the icon element.</li></ul></li>
+<li>Data Table<ul><li><code>numeric</code> prop on Cell should now also be set on Head Cells.</li></ul></li>
+<li>Dialog<ul><li>Open state is now controled by an <code>open</code> prop, instead of <code>open</code> and <code>close</code> functions. There are also <code>isOpen</code> and <code>setOpen</code> functions.</li>
+<li>Lists should now be placed below <code>Content</code> element, rather than being the <code>Content</code> component. For selection from a list, use the new <code>selection</code> prop on the dialog.</li>
+<li>Slider dialogs are styled a bit differently. See the <a href="https://sveltematerialui.com/demo/dialog/" rel="nofollow">demo</a>.</li></ul></li>
+<li>Icon Button<ul><li>No longer emit ‘MDCIconButtonToggle:change’ event without the <code>toggle</code> prop. Instead, listen for click event.</li></ul></li>
+<li>Linear Progress<ul><li>Removed <code>reversed</code> prop.</li></ul></li>
+<li>List<ul><li><code>radiolist</code> and <code>checklist</code> props renamed to <code>radioList</code> and <code>checkList</code>.</li></ul></li>
+<li>Menu Surface<ul><li>Anchor action now takes <code>addClass</code> and <code>removeClass</code> instead of <code>classForward</code> (like Ripple).</li></ul></li>
+<li>Ripple<ul><li><a href="https://github.com/hperrin/svelte-material-ui/blob/v3.0.0/packages/ripple/README.md#default" rel="nofollow">Ripple’s options</a> have changed considerably.</li></ul></li>
+<li>Select<ul><li>This is almost completely rewritten. You will need to migrate code for it. Check out the demo page.</li>
+<li>Helper Text in no longer a component. Instead, a <code>svelte:fragment</code> with text now goes inside the component in the “helper” slot. Its ID and ARIA attributes are set automatically.</li>
+<li>Removed <code>withLeadingIcon</code> and <code>selectedIndex</code> props.</li>
+<li>You no longer need <code>withLeadingIcon</code>. Instead, put Icon into the “leadingIcon” slot.</li>
+<li>You should now set <code>required</code> prop on the Select instead of <code>input$required</code>.</li></ul></li>
+<li>Slider<ul><li><code>displayMarkers</code> prop renamed to <code>tickMarks</code>.</li>
+<li><code>step</code> now defaults to 1 (same as the range HTML input).</li></ul></li>
+<li>Tab<ul><li>Removed <code>active</code> and <code>focusOnActivate</code> props. (No longer needed, since TabBar controls them.)</li></ul></li>
+<li>TabBar<ul><li>Removed <code>activeIndex</code> prop. <code>active</code> prop is now the only way to set the active tab, and it should be identical to one of the entries in <code>tabs</code> (pass objects by reference).</li></ul></li>
+<li>Textfield<ul><li>This is almost completely rewritten. You will need to migrate code for it. Check out the demo page.</li>
+<li>Helper Text and Character Counter now go inside the component in the “helper” slot. Their IDs and ARIA attributes are set automatically.</li>
+<li>Character Counter in a <code>textarea</code> Textfield goes in the “internalCounter” slot.</li>
+<li>Removed <code>fullwidth</code>, <code>dense</code>, <code>withLeadingIcon</code>, and <code>withTrailingIcon</code> props.</li>
+<li>You no longer need <code>withLeadingIcon</code> or <code>withTrailingIcon</code>. Instead, put Icons into the “leadingIcon” and “trailingIcon” slots.</li>
+<li>You should now set <code>required</code> prop on the Textfield instead of <code>input$required</code>.</li>
+<li>Manual setup now requires passing the sub-components into Textfield with <code>input</code>, <code>floatingLabel</code>, <code>lineRipple</code>, and <code>notchedOutline</code> props.</li></ul></li></ul>
+<h2 id="new-features-1">New Features.</h2>
+<h3 id="theming-sass-2">Theming, Sass</h3>
+<ul><li>Paper<ul><li>New <code>paper-color</code> mixin.</li></ul></li>
+<li>Switch<ul><li>New <code>color</code> prop.</li></ul></li></ul>
+<h3 id="components-4">Components</h3>
+<ul><li>All components have a <code>getElement</code> function that will return their top level DOM element.</li>
+<li>All components now forward <strong>all</strong> events, and only listen for them if bounded.</li>
+<li>They can also take event modifiers with the ”:” syntax istead of ”|” (<code>on:click:capture={handler}</code>).</li></ul>
+<p>New Components</p>
+<ul><li>Banners</li>
+<li>Circular Progress</li>
+<li>Layout Grids</li>
+<li>Segmented Buttons</li>
+<li>Tooltips</li>
+<li>Touch Target Wrappers</li></ul>
+<p>New Features in Existing Components</p>
+<ul><li>Chips<ul><li>New <code>nonInteractive</code> prop on Set.</li>
+<li>New <code>shouldFocusPrimaryActionOnClick</code> prop on Chip.</li></ul></li>
+<li>Common<ul><li>Icon now takes a <code>component</code> prop.</li></ul></li>
+<li>Data Table<ul><li>New <code>stickyHeader</code> prop.</li>
+<li>New <code>columnId</code> prop on Cell (defaults to an automatic ID).</li>
+<li>New <code>rowId</code> prop on Row (defaults to an automatic ID).</li>
+<li>Pagination</li>
+<li>Progress Indicator</li>
+<li>Column Sort Buttons</li></ul></li>
+<li>Dialog<ul><li>New <code>selection</code> prop.</li></ul></li>
+<li>Drawer<ul><li>New <code>fixed</code> prop (defaults to true).</li>
+<li>New <code>isOpen</code> function.</li></ul></li>
+<li>FAB<ul><li>New <code>touch</code> prop.</li></ul></li>
+<li>Form Field<ul><li>New <code>noWrap</code> prop.</li></ul></li>
+<li>Icon Button<ul><li>New <code>ariaLabelOn</code> and <code>ariaLabelOff</code> props for toggle buttons.</li></ul></li>
+<li>Menu<ul><li>New <code>isOpen</code> function.</li>
+<li>New <code>setOpen</code> function.</li>
+<li>New <code>setDefaultFocusState</code> function.</li></ul></li>
+<li>Menu Surface<ul><li>New <code>fullWidth</code> prop.</li>
+<li>New <code>anchorMargin</code> prop.</li>
+<li>New <code>MDCMenuSurface:closing</code> event.</li></ul></li>
+<li>Select<ul><li>New <code>hiddenInput</code> prop.</li>
+<li>New <code>key</code> prop for using objects as options.</li></ul></li>
+<li>Slider<ul><li>New <code>range</code>, <code>start</code>, <code>end</code> props for range sliders.</li>
+<li>New <code>valueToAriaValueTextFn</code> prop for updating the ARIA value attribute.</li></ul></li>
+<li>TabBar<ul><li>New <code>tabScroller$align</code> prop.</li></ul></li>
+<li>Textfield<ul><li>New <code>prefix</code> and <code>suffix</code> props.</li>
+<li>New <code>validateOnValueChange</code> prop.</li>
+<li>New <code>input$resizable={false}</code> prop to disable textarea resizing.</li>
+<li>New <code>helperLine$</code> ”$” props passed to the helper line.</li></ul></li>
+<li>Top App Bar<ul><li>New <code>scrollTarget</code> prop.</li></ul></li></ul>
+<p>If you have trouble upgrading with these instructions, you can raise an issue on GitHub.</p>
+<h1 id="smui-1---smui-2">SMUI 1 -&gt; SMUI 2</h1>
+<p>SMUI 2 migrated to upstream MDC 4.0 from 3.0:
+<a href="https://github.com/material-components/material-components-web/blob/master/CHANGELOG.md#400-2019-11-02-1" rel="nofollow">https://github.com/material-components/material-components-web/blob/master/CHANGELOG.md#400-2019-11-02-1</a></p>
+<ul><li>Chips<ul><li>Text component is now required.</li>
+<li>Now use their own Text and Icon components. The common ones will not work.</li>
+<li>Icon no longer requires <code>trailing</code> prop. That is the default.</li>
+<li>Checkmark component is no longer required. It is added automatically.</li></ul></li>
+<li>Menu and Menu Surface<ul><li>hoistMenuToBody function removed.</li></ul></li>
+<li>Select<ul><li><code>enchanced</code> prop is removed. All selects are enhanced now.</li>
+<li><code>selected</code> prop on Option is no longer required and probably should not be used.</li>
+<li>You now need to pass a class into <code>anchor$class</code> and <code>menu$class</code> with a width value set.</li></ul></li>
+<li>Button<ul><li>No longer has a <code>dense</code> prop. Use the mixin from MDC.</li></ul></li></ul>
+</section></main>
+</div></div>
+
+
+
+			
+		</div>
+  </body>
+</html>
